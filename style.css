@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;700&family=Open+Sans:wght@500&family=Varela+Round&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(17, 75, 17);
+}
+.wrapper{
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 59);
+    padding: 25px;
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding:3px;
+}
+.wrapper form{
+    margin: 25px 0 25px;
+}
+form .row{
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+form .row label{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+form :where(textarea,select,button){
+    outline: none;
+    width:100%;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+}
+form .row textarea{
+    resize: none;
+    height:120px;
+    font-size: 15px;
+    padding:5px;
+    border: 1px solid #000000;
+}
+form .row .outer{
+    height:45px;
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 0 10px;
+    align-items: center;
+}
+form .row select{
+    font-size:14px;
+}
+form button{
+    height: 50px;
+    margin-top: 10px;
+    background: rgb(17, 75, 17);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+form button:hover{
+    background: rgb(11, 49, 11);
+}
